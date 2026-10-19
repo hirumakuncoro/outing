@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "defaultLeadMinutes": 10,
+  "events": [
+    {
+      "id": "example-briefing",
+      "start": 1792715400000,
+      "end": 1792724400000,
+      "title": "Contoh briefing",
+      "location": "Ruang kumpul",
+      "dresscode": "Pakaian nyaman",
+      "notes": "Data dummy, ganti sebelum import.",
+      "leadMinutes": 10,
+      "notify": true,
+      "_wib": "Jum 23 Okt 07:30-10:00"
+    }
+  ],
+  "reminders": [
+    {
+      "id": "example-reminder",
+      "at": 1792612200000,
+      "title": "Contoh pengingat",
+      "body": "Data dummy, ganti sebelum import.",
+      "_wib": "Kam 22 Okt 03:30"
+    }
+  ],
+  "checklist": [
+    {
+      "id": "example-item",
+      "group": "Contoh",
+      "text": "Isi checklist"
+    }
+  ]
+}

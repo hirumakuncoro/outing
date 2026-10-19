@@ -1,0 +1,9 @@
+data/schedule.json
+plan.md
+*.jks
+*.keystore
+local.properties
+.gradle/
+build/
+.idea/
+*.iml
