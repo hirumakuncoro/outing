@@ -1,6 +1,6 @@
-package id.my.ikhsanheriyawan.outing
-
 @file:OptIn(androidx.compose.material3.ExperimentalMaterial3Api::class)
+
+package id.my.ikhsanheriyawan.outing
 
 import android.content.ComponentName
 import android.content.Context
@@ -47,8 +47,9 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
-import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.unit.dp
 import id.my.ikhsanheriyawan.outing.alarm.AlarmScheduler
 import id.my.ikhsanheriyawan.outing.data.CheckPrefs
 import id.my.ikhsanheriyawan.outing.data.Schedule
