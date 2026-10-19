@@ -26,6 +26,13 @@ object AlarmScheduler {
         AlarmPlanner.plan(schedule, System.currentTimeMillis()).forEach { schedule(context, it) }
     }
 
+    fun scheduledAlarmCount(context: Context): Int = preferences(context)
+        .getStringSet(REQUEST_CODES_KEY, emptySet())
+        .orEmpty()
+        .size
+
+    fun nextAlarmMillis(context: Context): Long? = alarmManager(context).nextAlarmClock?.triggerTime
+
     fun scheduleTest(context: Context, triggerAtMillis: Long = System.currentTimeMillis() + 60_000L) {
         schedule(context, AlarmPlanner.testPayload(triggerAtMillis))
     }
